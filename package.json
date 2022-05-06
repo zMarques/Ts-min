@@ -1,0 +1,26 @@
+{
+  "name": "ts-min",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@prisma/client": "^3.13.0",
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.31",
+    "prisma": "^3.13.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.6.4"
+  },
+  "scripts": {
+    "test": "yarn jest",
+    "build": "tsc -p .",
+    "dev": "tsnd --transpile-only --exit-child --respawn --ignore-watch node_modules src/index.ts",
+    "start": "node dist/index.js"
+  }
+}
